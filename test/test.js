@@ -2,7 +2,6 @@ const assert = require('assert')
 const path = require('path')
 const fs = require('fs')
 const stringify = require('../lib/stringify')
-
 describe('css stringify', function () {
   it('可以正确的 stringify 文件', function () {
     const a = require('./source/a.json')
