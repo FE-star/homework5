@@ -6,6 +6,7 @@ const stringify = require('../lib/stringify')
 describe('css stringify', function () {
   it('可以正确的 stringify 文件', function () {
     const a = require('./source/a.json')
+    console.log('stringify(a)',stringify(a))
     assert(
       stringify(a),
       fs.readFileSync(path.join(__dirname, './expect/a.css'), 'utf-8')
