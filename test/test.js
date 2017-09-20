@@ -11,12 +11,6 @@ describe('css stringify', function () {
       stringify(a),
       fs.readFileSync(path.join(__dirname, './expect/a.css'), 'utf-8')
     )
-
-//     assert.equal(
-// `a {\r\n  color: red;\r\n  font-size: 15px;\r\n}`
-//       ,
-//       fs.readFileSync(path.join(__dirname, './expect/a.css'), 'utf-8')
-//     )
   })
 
   it('可以使用 indent', function () {
