@@ -13,6 +13,7 @@ describe('css stringify', function () {
     )
   })
 
+
   it('可以使用 indent', function () {
     const indent = require('./source/indent.json')
     assert.equal(
